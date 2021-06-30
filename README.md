@@ -11,6 +11,5 @@ Subir videos que desde YouTube no pueden ser accedidos
 > **PizzaConRecursos**
 
 
-```git status```
 
 ## #PIZZACONPIÑA
