@@ -3,8 +3,8 @@
 
 # Objetivo
 
-Lugar donde acceder a recursos de videos de YouTube.
-- También se subirán algunos videos que desde YouTube no pueden ser accedidos.☠
-
+Subir videos que desde YouTube no pueden ser accedidos 
+- También se puede incluir una zona de recursos para complementar lo aprendido en YouTube
+PizzaConRecursos
 
 ## #PIZZACONPIÑA
