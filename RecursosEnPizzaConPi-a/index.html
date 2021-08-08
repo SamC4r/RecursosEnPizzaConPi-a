@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aplicacion Presupuesto</title>
+        <link href="CSS/estilos.css" rel="stylesheet" />
+    </head>
+    <body>
+
+        <div class="cabecero">
+            <div class="presupuesto">
+
+                <div class="titulo" id="titulo">
+                    Recursos En Pizza Con Piña (REPCP)
+                </div>
+
+            </div>
+        </div>
+        <!--Formulario para acceder a videos-->
+        <form id= 'forma' method="post" name="forma"><!--onsumbit = 'return false'  para que no se envie la informacion al servidor-->
+            <div class= 'agregar'>
+                <div class="agregar_contenedor">
+                    <select class= 'agregar_descripcion' placeholder='Acceder a
+                        videos eliminados' id= 'descripcion' onchange="addInfo(this)">
+                        <option value="" disabled selected>Mas Informacion sobre
+                            cada video</option>
+                        <option value="Fluxion"
+                            onclick="addInfo(this)" >Como hackear red WIFI con
+                            comandos FLUXION</option>
+                        <option value="Windows7">Como hackear Una Pc que
+                            usa WIndows 7. Eternalblue</option>
+                    </select>
+
+                    <!--step = 'any' se pueden introducir decimales-->
+
+                </div>
+            </div>
+        </form>
+
+        <!--Listado de Ingresos-->
+        <div class="contenedor limpiarEstilos">
+            <!--! Ingresos-->
+            <div class="ingreso">
+                <h2 class= 'ingreso_titulo'>Acceder a Videos Eliminados</h2>
+                <div id= 'lista-ingresos'>
+                    <!--! Un elemento de Ingreso. EJ: Ropa 2000$-->
+                    <div class="elemento limpiarEstilos">
+                        <div class="elemento_descripcion">Fluxion</div>
+                        <div class="derecha limpiarEstilos">
+                            <div class="elemento_valor">Activo</div>
+                            <div class="elemento_eliminar">
+                                <button value="Fluxion" class=
+                                    'elemento_eliminar--btn'
+                                    onclick="video(this)">
+                                    <ion-icon name="checkmark-circle-outline"></ion-icon>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--? Otro elemento de Ingreso-->
+                    <div class="elemento limpiarEstilos">
+                        <div class="elemento_descripcion">Windows 7 Eternalblue</div>
+                        <div class="derecha limpiarEstilos">
+                            <div class="elemento_valor">Fuera de Servicio</div>
+                            <button value="Fluxion" class=
+                            'elemento_eliminar--btn'
+                            >
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>
+                        </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Descripciopn-->
+            <div class="contenedor limpiarEstilos">
+                <!--! Descripcion-->
+                <div class="egreso">
+                    <h2 class= 'egreso_titulo'>Descripcion</h2>
+                    <div id= 'lista-egresos'>
+                        <button value="Fluxion" class= 'elemento_eliminar--btn'>
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>
+                        </button>
+
+                    </div>
+                </div>
+
+
+
+
+                <script src="JS/Dato.js"></script>
+                <script src="JS/Video.js"></script>
+                <script src="JS/app.js"></script>
+                <!--? Para poner una x al lado-->
+                <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+            </body>
+        </html>
